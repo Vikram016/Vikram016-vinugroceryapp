@@ -1,33 +1,26 @@
 import { Tabs } from "expo-router";
-import { Ionicons } from '@expo/vector-icons';
+import  Ionicons  from '@expo/vector-icons/Ionicons'
+import { Colors } from '../../constants/Utils'
+ 
 
 export default function TabLayout() {
     return (
-        <Tabs
-            screenOptions={{
-                headerShown: false,
-                tabBarActiveTintColor: "#007AFF",
-                tabBarInactiveTintColor: "#8E8E93"
-            }}
-        >
+        <Tabs screenOptions={{ headerShown: false }}>         
+                
             <Tabs.Screen 
                 name="index"
                 options={{
-                    title: "Home",
-                    headerShown: false,
-                    tabBarIcon: ({ focused, color }) => (
+                    title: "",
+                    tabBarIcon: ({ focused }) => (
                         <Ionicons 
-                            size={24} 
+                            size={27} 
                             name={focused ? "home" : "home-outline"} 
-                            color={color}
+                            color={ focused ? Colors.primary : Colors.secondary}
                         />
-                    )
+                    ),
                 }}
             />
-           
-                    
-                
-            </Tabs>
+        </Tabs>
     );
 }
 
