@@ -18,6 +18,34 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="orders"
+        options={{
+          title: "",
+          tabBarIcon: ({ focused }) => (
+            <Ionicons
+              size={27}
+              name={focused ? "bag-check" : "bag-check-outline"}
+              color={focused ? Colors.primary : Colors.secondary}
+            />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "",
+          tabBarIcon: ({ focused }) => (
+            <Ionicons
+              size={27}
+              name={focused ? "person" : "person-outline"}
+              color={focused ? Colors.primary : Colors.secondary}
+            />
+          ),
+        }}
+      />
+
     </Tabs>
   );
 }

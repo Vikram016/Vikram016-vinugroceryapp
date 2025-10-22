@@ -11,7 +11,7 @@ export const Colors = {
   starGold: "#FFD700",
   error: "#fadbd8", 
   inStock: "#6f63af",
-  soldOut: "#E9ECEF",
+  outOfStock: "#E9ECEF",
 
   success: "#166534", 
   successLight: "#dcfce7", 
