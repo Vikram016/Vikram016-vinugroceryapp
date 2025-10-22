@@ -1,5 +1,5 @@
 // Backend API URL
-export const BASE_URL = 'http://localhost:5000';  // Change this according to your backend URL
+export const BASE_URL = 'http://localhost:9090';  // Matches the backend port
 
 // API Endpoints
 export const PRODUCTS_URL = '/api/products';
